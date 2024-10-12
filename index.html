@@ -1,88 +1,130 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <title>Menu Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/ci.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/login-signup.css"/>
+    <link
+      rel="stylesheet"
+      href="./assets/font/fontawesome-free-6.6.0-web/css/all.min.css"
+    />
+    <script src="./assets/js/main.js"></script>
+    
   </head>
   <body>
-    <!-- header -->
-    <header class="header">
-      <nav class="nav">
-        <a href="#" class="nav_logo">GundamStore</a>
-        <ul class="nav_items">
-          <li class="nav_item">
-            <a href="#" class="nav_link">Home</a>
-            <a href="#" class="nav_link">Product</a>
-            <a href="#" class="nav_link">Services</a>
-            <a href="#" class="nav_link">Contact</a>
-          </li>
-        </ul>
+    <div class="app">
+      <header>
+        <img class="bcd" src="assets/img/animation.png" alt="" />
+        <img class="abc" src="assets/img/tenor.gif" alt="" />
+        <nav class="navbar">
+          <ul class="left_item" ><li class="icon"></li></ul>
+          <ul>
+            <li>
+              <a title="Thong Bao" class="icon" href=""
+                ><i class="fa-regular fa-bell"></i
+              ></a>
+            </li>
+            <li>
+              <a title="Tim Kiem" class="icon" href=""
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                title="Dang Nhap/ Dang Xuat"
+                class="icon"
+                ><i id="user-icon" class="fa-regular fa-user"></i
+              ></a>
+            </li>
+            <li>
+              <div title="Menu" class="icon" >
+                <div class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="menu-content">
+                    <div style="min-height: 100px; color: black; font-size: 30px; text-align: center;">menu</div>
+                    <a href="">Trang chu</a>
+                    <a href="">Thong Bao</a>
+                    <a href="">Lien He</a>
+                    <a href="">Tro Giup</a>
+                    <a href="">hello</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div id="brand" class="brand">
+            <a href="" id="brand-item" class="brand-item">G U N D A M</a>
+          </div>
+        </nav>
+      </header>
+      <div class="container">
+        <div class="content">
+        <h1>tieu de</h1>
+        <p>jacnacnkaldkmclkaclkalkca</p>
+      </div>
+      <div class="form-container">
+        <i class="fa-solid fa-xmark close-form"></i>
+        <!--login-->
+        <div class="form login-form">
+          <h2>Login</h2>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your username">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Enter password">
+            <i class="fa-solid fa-lock"></i>
+            <i class="fa-regular fa-eye-slash pw-hide"></i>
+          </div>
   
-        <button class="button" id="form-open">login</button>
-      </nav>
-    </header>
-    <!--home-->
-    <section class="home">
-      <div class="form_container">
-        <i class="form_close bx bx-x"></i>
-        <!--Login form-->
-        <div class="form login_form">
-          <form action="#">
-            <h2>Login</h2>
-
-            <div class="input_box">
-              <input type="email" placeholder="Enter your email" required>
-              <i class="email_icon bx bxs-envelope" ></i>
+          <div class="option-field">
+            <div class="checkbox">
+              <input type="checkbox" id="check">
+              <label for="check">Remember me</label>
             </div>
-            <div class="input_box">
-              <input type="password" placeholder="Enter your password" required>
-              <i class="lock_icon bx bxs-lock-alt" ></i>
-              <i class="uil uil-eye-slash pw-hide"></i>
+            <div class="forgot-password-box">
+              <a class="forgot-password" href="#">Forgot Password?</a>
             </div>
-
-            <div class="option_field">
-              <span class="checkbox">
-                <input type="checkbox" id="check">
-                <label for="check">Remember me</label>
-              </span>
-              <a href="#" class="forgot_pw">Forgot password?</a>
-            </div>
-
-            <button class="button">Login now</button>
-
-            <div class="login-signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
-          </form>
+          </div>
+          
+          <button class="login-button">Login</button>
+  
+          <div class="login-signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
         </div>
 
-        <!--Signup Form-->
-        <div class="form signup_form">
-          <form action="#">
-            <h2>Signup</h2>
-
-            <div class="input_box">
-              <input type="email" placeholder="Enter your email" required>
-              <i class="email_icon bx bxs-envelope" ></i>
-            </div>
-            <div class="input_box">
-              <input type="password" placeholder="Create password" required>
-              <i class="lock_icon bx bxs-lock-alt" ></i>
-              <i class="uil uil-eye-slash pw-hide"></i>
-            </div>
-            <div class="input_box">
-              <input type="password" placeholder="Confirm password" required>
-              <i class="lock_icon bx bxs-lock-alt" ></i>
-              <i class="uil uil-eye-slash pw-hide"></i>
-            </div>
-
-            <button class="button">Signup now</button>
-
-            <div class="login-signup">Already have an account? <a href="#" id="login">Login</a></div>
-          </form>
+         <!--signup form-->
+        <div class="form signup-form">
+          <h2>Sign up</h2>
+          <div class="input-box">
+            <input type="email" placeholder="Enter your email" required>
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your username">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Create password">
+            <i class="fa-solid fa-lock"></i>
+            <i class="fa-regular fa-eye-slash pw-hide"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Confirm password">
+            <i class="fa-solid fa-lock"></i>
+            <i class="fa-regular fa-eye-slash pw-hide"></i>
+          </div>
+  
+          <button class="login-button">Login</button>
+  
+          <div class="login-signup">Already have an account? <a href="#" id="login">Login</a></div>
         </div>
       </div>
-    </section>
-
-    <script src="script.js"></script>
+      <div class="footer"></div>
+    </div>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
