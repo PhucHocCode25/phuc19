@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menu Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/ci.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/login-signup.css"/>
+    <link
+      rel="stylesheet"
+      href="./assets/font/fontawesome-free-6.6.0-web/css/all.min.css"
+    />
+    <script src="./assets/js/main.js"></script>
+    
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <img class="bcd" src="assets/img/animation.png" alt="" />
+        <img class="abc" src="assets/img/tenor.gif" alt="" />
+        <nav class="navbar">
+          <ul class="left_item" ><li class="icon"></li></ul>
+          <ul>
+            <li>
+              <a title="Thong Bao" class="icon" href=""
+                ><i class="fa-regular fa-bell"></i
+              ></a>
+            </li>
+            <li>
+              <a title="Tim Kiem" class="icon" href=""
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                title="Dang Nhap/ Dang Xuat"
+                class="icon"
+                ><i id="user-icon" class="fa-regular fa-user"></i
+              ></a>
+            </li>
+            <li>
+              <div title="Menu" class="icon" >
+                <div class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="menu-content">
+                    <div style="min-height: 100px; color: black; font-size: 30px; text-align: center;">menu</div>
+                    <a href="">Trang chu</a>
+                    <a href="">Thong Bao</a>
+                    <a href="">Lien He</a>
+                    <a href="">Tro Giup</a>
+                    <a href="">hello</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div id="brand" class="brand">
+            <a href="" id="brand-item" class="brand-item">G U N D A M</a>
+          </div>
+        </nav>
+      </header>
+      <div class="container">
+        <div class="content">
+        <h1>tieu de</h1>
+        <p>jacnacnkaldkmclkaclkalkca</p>
+      </div>
+      <div class="form-container">
+        <i class="fa-solid fa-xmark close-form"></i>
+        <!--login-->
+        <div class="form login-form">
+          <h2>Login</h2>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your username">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Enter password">
+            <i class="fa-solid fa-lock"></i>
+            <i class="fa-regular fa-eye-slash pw-hide"></i>
+          </div>
+  
+          <div class="option-field">
+            <div class="checkbox">
+              <input type="checkbox" id="check">
+              <label for="check">Remember me</label>
+            </div>
+            <div class="forgot-password-box">
+              <a class="forgot-password" href="#">Forgot Password?</a>
+            </div>
+          </div>
+          
+          <button class="login-button">Login</button>
+  
+          <div class="login-signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+        </div>
+
+         <!--signup form-->
+        <div class="form signup-form">
+          <h2>Sign up</h2>
+          <div class="input-box">
+            <input type="email" placeholder="Enter your email" required>
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your username">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Create password">
+            <i class="fa-solid fa-lock"></i>
+            <i class="fa-regular fa-eye-slash pw-hide"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Confirm password">
+            <i class="fa-solid fa-lock"></i>
+            <i class="fa-regular fa-eye-slash pw-hide"></i>
+          </div>
+  
+          <button class="login-button">Login</button>
+  
+          <div class="login-signup">Already have an account? <a href="#" id="login">Login</a></div>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
